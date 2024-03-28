@@ -167,6 +167,7 @@ text-buttons {
 .first>div :first-child {
     font-size: 48px;
     font-weight: bolder;
+    margin-top: 20px;
 }
 
 .first>div :nth-child(2) {
@@ -176,7 +177,7 @@ text-buttons {
 section.first>div {
     display: flex;
     flex-direction: column;
-    padding: 20px 0 0 70px;
+    /* padding: 20px 0 0 70px; */
     
 }
 
@@ -198,7 +199,7 @@ section.first>div {
 
 .sec3-img video {
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: 0;
     width: 555px;
     height: 200px;
@@ -206,7 +207,7 @@ section.first>div {
 
 .faq {
     background-color: black;
-    padding: 10px;
+    padding: 1px;
     color: white;
     text-align: center;
 }
@@ -237,6 +238,7 @@ section.first>div {
 
 .fourth-last {
     margin-top: 50px;
+    padding: 30px;
 }
 
 .fourth-last span {
@@ -276,13 +278,14 @@ section.first>div {
 
 footer {
     color: rgb(235, 231, 231);
-    /* max-width: 70vw; */
+    max-width: 70vw;
     margin: auto;
-    padding: 60px;
+    padding: 40px;
 }
 
 footer .questions {
     padding: 20px 10px;
+    text-align: center;
 }
 
 
@@ -290,7 +293,6 @@ footer .questions {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
-    gap: 100px;
 }
 
 footer a {
@@ -328,7 +330,152 @@ footer a {
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width: 835px) {
+@media (max-width:730px) {
+    nav{
+        max-width: 90vw;
+    }
+    nav img{
+        width: 100px;
+    }
+    .text> :first-child {
+        font-size: 30px;
+    }
+    .text> :nth-child(2) {
+        font-size: 20px;
+    }
+    .text> :nth-child(3) {
+        font-size: 16px;
+    }
+    .main input {
+        padding: 12px 20px 8px 11px;
+    }
+    .btn-red {
+        padding: 11px 10px 7px 10px;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .first>div :first-child {
+        font-size: 30px;
+    }
+    .first>div :nth-child(2) {
+        font-size: 17px;
+    }
+    .sec1-img img {
+        width: 380px;
+    }
+    .sec1-img video {
+        position: absolute;
+        right: 52px;
+        top: 80px;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        height: 155px;
+    }
+    .sec3-img img {
+        width: 350px;
+    }
+    .sec3-img video {
+        top: 46px;
+        width: 352px;
+        height: 125px;
+    }
+    .faq h2{
+        font-size: 28px;
+    }
+    .faqbox {
+        padding: 20px;
+        margin: 8px auto;
+        max-width: 50vw;
+        font-size: 15px;
+    }
+    .fourth-last span {
+        font-size: 15px;
+    }
+    .faq input {
+        padding: 5px 5px 5px 10px;
+    }
+    .faq .btn-red {
+        font-size: 12px;
+    }
+    .footer{
+        gap: 50px;
+    }
+}
+@media (max-width:610px) {
+    .footer{
+        gap: 20px;
+    }
+}
+@media (max-width:515px) {
+    .footer{
+        gap: 5px;
+    }
+}
+@media (max-width:480px) {
+    .footer{
+        display: contents;
+        text-align: center;
+    }
+    .last{
+        margin: 20px auto;
+    }
+    .last2{
+        display: none;
+    }
+}
+@media (max-width:400px) {
+    .sec1-img img {
+        width: 255px;
+    }
+    .sec1-img video {
+        position: absolute;
+        right: 35px;
+        top: 58px;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        height: 105px;
+    }
+    .first>div :first-child {
+        font-size: 20px;
+    }
+    .first>div :nth-child(2) {
+        font-size: 12px;
+    }
+    .sec3-img img {
+        width: 260px;
+    }
+    .sec3-img video {
+        top: 40px;
+        width: 260px;
+        height: 88px;
+    }
+    .faq h2 {
+        font-size: 20px;
+    }
+    nav img {
+        width: 60px;
+    }   
+    .text> :first-child {
+        font-size: 20px;
+    }
+    .text> :nth-child(2) {
+        font-size: 15px;
+    }
+    .text> :nth-child(3) {
+        font-size: 12px;
+    } 
+    .text-buttons{
+        display: grid;
+    }
+    .faqbox{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .text-buttons-last{
+        display: grid;
+    }
+}
+/* @media screen and (max-width: 835px) {
     .first {
         display: flex;
         flex-direction: column;
@@ -382,8 +529,8 @@ footer a {
         max-width: 127vw;
     }
 
-}
-@media screen and (max-width: 300px) {
+} */
+/* @media screen and (max-width: 300px) {
     .main{
         width: 400vw;
     }
@@ -409,4 +556,4 @@ footer a {
         font-size: 35px;
         font-weight: bolder;
     }
-}
+} */
